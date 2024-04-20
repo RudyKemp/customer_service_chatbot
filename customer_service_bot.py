@@ -2,7 +2,7 @@ from transformers import pipeline, set_seed
 
 def create_chatbot():
     # Initialize a text generation pipeline with a pre-trained model
-    chatbot = pipeline('text-generation', model='gpt-2')
+    chatbot = pipeline('text-generation', model='gpt2')
     set_seed(42)
     return chatbot
 
